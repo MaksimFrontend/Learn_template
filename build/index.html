@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/iconsfont.css">
+   <link rel="stylesheet" href="./css/main.css"> <!--Подключаем стили относительно конечной папки docs-->
+   <title>main page</title>
+</head>
+<body>
+   
+   <div class="wrapper">
+
+		<header class="header">
+   <div class="container">
+      <div class="header__inner">
+
+      </div>
+   </div>
+</header>
+
+		<main class="main">
+			<!-- Первый экран -->
+<section class="top">
+   <div class="container">
+      <div class="top__inner">
+         <h1 class="top__inner-title">
+            Измерение информации
+         </h1>
+      </div>
+
+      <div class="top__arrow">
+         <div class="top__arrow-item">
+            <a class="top__arrow-link" href="#info"><i class="fa-sharp fa-solid fa-chevron-down" style="color: #ffffff;"></i></a>
+         </div>
+      </div>
+
+   </div>
+</section>
+         <!-- Второй блок (Бит) -->
+<section class="info" id="info">
+   <div class="container">
+      <div class="info__inner">
+         <div class="info__inner-description">
+            <h2 class="info__inner-title">
+               Бит
+            </h2>
+            <p class="info__inner-text">
+               Количество информации, которое можно записать (закодировать) с помощью одного двоичного знака
+            </p>
+         </div>
+         <div class="info__inner-images">
+            <img class="info__inner-img" src="./img/info/info__inner-images.jpg" alt="две лампочки">
+            <img class="info__inner-img" src="./img/info/info__inner-images2.jpg" alt="монеты">
+            <img class="info__inner-img" src="./img/info/info__inner-images3.jpg" alt="чёрное и белое">
+         </div>
+      </div>
+   </div>
+</section>
+         <section class="options">
+   <div class="container">
+      <div class="options__inner">
+         <h2 class="options__inner-title">
+            А если вариантов больше?
+         </h2>
+         <div class="options__inner-cards">
+            <div class="options__inner-card">
+               <img class="options__inner-img" src="./img/options/options__inner-img.png" alt="поезд">
+               <div class="options__inner-text"> 1 платформа </div>
+            </div>
+
+            <div class="options__inner-card">
+               <img class="options__inner-img" src="./img/options/options__inner-img.png" alt="поезд">
+               <div class="options__inner-text"> 2 платформа </div>
+            </div>
+
+            <div class="options__inner-card">
+               <img class="options__inner-img" src="./img/options/options__inner-img.png" alt="поезд">
+               <div class="options__inner-text"> 3 платформа </div>
+            </div>
+
+            <div class="options__inner-card">
+               <img class="options__inner-img" src="./img/options/options__inner-img.png" alt="поезд">
+               <div class="options__inner-text"> 4 платформа </div>
+            </div>
+         </div>
+         <div class="options__inner-bits">
+            <ul class="options__inner-list">
+               <li class="options__inner-item">два бита:</li>
+               <li class="options__inner-item">три бита:</li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</section>
+		</main>
+
+		
+
+	</div>
+
+   <!-- Скрипты подключать относительно конечной папки docs. При подключении скрипта на новой странице добавляем путь к скрипту в файл webpack.config.js (если удаляем скрипт не забываем удалить путь к скрипту из webpack) -->
+   <script src="https://kit.fontawesome.com/338d37c184.js" crossorigin="anonymous"></script>
+   <script src="./js/index.bundle.js"></script>
+</body>
+</html>

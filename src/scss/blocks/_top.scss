@@ -1,0 +1,35 @@
+/* ========= Первый экран start ========= */
+
+.top {
+	position: relative;
+	height: 100vh;
+	background: linear-gradient(to right, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, .7) 100%), url('../img/top/home.jpg') 50% 50%/100% no-repeat fixed; // Растягиваем маленькую картинку по ширине - 50% 50%/100%
+}
+
+.top__inner {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.top__inner-title {
+	max-width: 100%;
+	line-height: 140%;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 104px;
+	font-weight: 600;
+	color: #fff;
+}
+
+.top__arrow {
+	position: absolute;
+	top: 90%;
+	left: 49%;
+}
+
+.fa-chevron-down {
+	font-size: 50px;
+}

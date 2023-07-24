@@ -3,6 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/iconsfont.css">
    <link rel="stylesheet" href="./css/main.css"> <!--Подключаем стили относительно конечной папки docs-->
    <title>main page</title>
 </head>
@@ -13,7 +14,9 @@
 		@@include('./blocks/header.html')
 
 		<main class="main">
-			
+			@@include('./blocks/top.html')
+         @@include('./blocks/info.html')
+         @@include('./blocks/options.html')
 		</main>
 
 		@@include('./blocks/footer.html')
@@ -21,6 +24,7 @@
 	</div>
 
    <!-- Скрипты подключать относительно конечной папки docs. При подключении скрипта на новой странице добавляем путь к скрипту в файл webpack.config.js (если удаляем скрипт не забываем удалить путь к скрипту из webpack) -->
-   <!-- <script src="./js/index.bundle.js"></script> -->
+   <script src="https://kit.fontawesome.com/338d37c184.js" crossorigin="anonymous"></script>
+   <script src="./js/index.bundle.js"></script>
 </body>
 </html>

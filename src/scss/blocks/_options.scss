@@ -1,0 +1,56 @@
+/* ========= Третий экран (варианты) start ========= */
+
+.options {
+	margin-top: 150px;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+
+	&__inner-title {
+		@extend %title-font;
+		text-transform: none;
+		font-weight: 600;
+		color: rgb(143, 28, 196);
+		text-align: center;
+	}
+
+	&__inner-cards {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 100px;
+	}
+
+	&__inner-card {
+		width: 260px;
+	}
+
+	&__inner-img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	&__inner-text {
+		font-size: 22px;
+		text-align: center;
+	}
+
+	&__inner-bits {
+		margin: 45px 0 135px 0;
+	}
+
+	&__inner-item {
+		font-size: 20px;
+		line-height: 1.35;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin-bottom: 55px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+}
